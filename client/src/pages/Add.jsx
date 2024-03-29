@@ -31,14 +31,14 @@ const Add = () => {
 
     return (
         <div>
-            <form className="">
+            <form className="flex flex-col gap-5">
                 <p>Add New Book</p>
                 <input type='text' placeholder='Title' className="border-2" onChange={handleChange} name='title' />
                 <input type='text' placeholder='Description' className="border-2" onChange={handleChange} name='desc' />
                 <input type='number' placeholder='Price' className="border-2" onChange={handleChange} name='price' />
                 <input type='text' placeholder="cover" className="border-2" onChange={handleChange} name='cover'/>
             </form>
-            <button onClick={handleClick} className='border-2 bg-teal-700 p-2 text-white rounded-lg'>Add Book</button>
+            <button onClick={handleClick} className='border-2 bg-teal-700 p-2 text-white rounded-lg mt-5'>Add Book</button>
         </div>
     );
 };

@@ -6,16 +6,16 @@ import Update from './pages/Update';
 function App() {
   
   return (
-    <>
+    <div className='flex items-center justify-center h-screen text-center'>
      <Router>
       <Routes>
         <Route path="/" element={<Books/>} />
         <Route path="/add" element={<Add/>}/>
-        <Route path="/update" element={<Update/>}/>
+        <Route path="/update/:id" element={<Update/>}/>
       </Routes>
      </Router>
       
-    </>
+    </div>
   )
 }
 
